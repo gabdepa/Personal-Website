@@ -1,0 +1,97 @@
+/******************TAG SELECTORS***********************/
+body {
+    margin: 0;
+    background-color: #EAFDFC;
+    font-family: verdana, sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+h1 {
+    color: #5dbaf8;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 5.625rem; /*1em = 16px = 100% */
+    line-height: 2;
+    margin: 50px auto 0;
+}
+
+h2 {
+    color: #1363DF;
+    font-size: 31px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+}
+
+h3 {
+    color: #47B5FF;
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #06283D;
+    border-width: 6px;
+    width: 5%;
+    margin: 2rem auto 2rem auto;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* img:hover {
+    background-color: gold;
+} */
+
+/******************CLASS SELECTORS***********************/
+/* Definiton: Multiple Instances, particular Class can be used more than once in a webpage */
+
+.top-container {
+    background-color: #06283D;
+    /* position: relative; */
+    padding-top: 30px;
+    margin: 0 0 0 0 ;
+}
+
+.middle-container {
+    background-color: #EAFDFC;
+}
+
+.bottom-container {
+    background-color: #EAFDFC;
+}
+
+.div-professional-academic {
+    margin: 3rem 0 3rem 0 ;
+    position: relative;
+    left: 20%;
+}
+
+.div-hobbies {
+    margin: 3rem 0 3rem 0 ;
+    position: relative;
+    left: 45%;
+}
+
+.professional-academic {
+    line-height: 2rem;
+    text-align: left;
+}
+
+/******************ID SELECTORS***********************/
+/* Definiton: Single Instance, particular ID can only be used once in a webpage */
+#text-top {
+    color: #5dbaf8;
+    padding-bottom: 3rem;
+}
+
+#text-bottom {
+    line-height: 1rem;
+    
+}
+

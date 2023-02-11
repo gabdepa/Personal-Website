@@ -1,0 +1,123 @@
+/********************TAG SELECTORS**********************************/
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+    color: #5dbaf8;
+    font-size: 5.625rem; /*1em = 16px = 100% */
+    line-height: 2;
+    margin: 50px auto 0;
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+h2 {
+    color: #5dbaf8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+/***********************CLASS SELECTORS***************************/
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+    width: 10%; /* Reduce the width of the image to 50% of its original size */
+    height: auto;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+    width: 10%; /* Reduce the width of the image to 50% of its original size */
+    height: auto;
+}
+
+.top-container {
+    background-color: #06283D;
+    position: relative;
+    padding-top: 80px;
+
+}
+
+.middle-container {
+    background-color: #EAFDFC;
+}
+
+.bottom-container {
+    background-color: #EAFDFC;
+}
+
+
+/***********************ID SELECTORS***************************/
+
+#avatar-image {
+    width: 10%; /* Reduce the width of the image to 50% of its original size */
+    height: auto; /* Keep the aspect ratio of the image intact */      
+}
+
+#wave-image {
+    display: inline-block;
+    width: 3%; /* Reduce the width of the image to 50% of its original size */
+    height: auto;
+}
+
+#control-image {
+    display: inline-block;
+    width: 3%; /* Reduce the width of the image to 50% of its original size */
+    height: auto;
+}
+
+#skill-row-1 {
+    width: 50%;
+    margin: 80px auto 150px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+#coding-image {
+    width: 25%; /* Reduce the width of the image to 50% of its original size */
+    float: right; 
+    margin-left: 30px;
+}
+
+#skill-row-2 {
+    width: 50%;
+    margin: 100px auto 150px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+#computer-image {
+    width: 25%; /* Reduce the width of the image to 50% of its original size */
+    float: left;
+    margin-right: 30px;      
+}
+
+#presentation {
+    display: inline-block;
+    position: relative;
+    bottom: 1rem;
+}
+
+#description-paragraph {
+    font-size: 2.5rem;
+}
+
+#programmer-image {
+    width: auto; /* Reduce the width of the image to 50% of its original size */
+    height: 10%
+}
