@@ -18,6 +18,7 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 2.5rem;
+    padding-bottom: 10px;
 }
 
 h3 {
@@ -25,22 +26,69 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+p {
+    line-height: 2;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #06283D;
+    border-width: 6px;
+    width: 5%;
+    margin: 2rem auto 2rem auto;
+}
+
 a {
     color: #11999E;
     font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
 }
+
+a:hover {
+    color: #EAF6F6;
+}
+
+.btn {
+    background: #5dbaf8;
+    background-image: -webkit-linear-gradient(top, #5dbaf8, #11999E);
+    background-image: -moz-linear-gradient(top, #5dbaf8, #11999E);
+    background-image: -ms-linear-gradient(top, #5dbaf8, #11999E);
+    background-image: -o-linear-gradient(top, #5dbaf8, #11999E);
+    background-image: linear-gradient(to bottom, #5dbaf8, #11999E);
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #11999E;
+    background-image: -webkit-linear-gradient(top, #11999E, #10999e);
+    background-image: -moz-linear-gradient(top, #11999E, #10999e);
+    background-image: -ms-linear-gradient(top, #11999E, #10999e);
+    background-image: -o-linear-gradient(top, #11999E, #10999e);
+    background-image: linear-gradient(to bottom, #11999E, #10999e);
+    text-decoration: none;
+  }
+
 /***********************CLASS SELECTORS***************************/
 .top-cloud {
     position: absolute;
     right: 300px;
-    top: 50px;
+    top: 40px;
     width: 10%; /* Reduce the width of the image to 50% of its original size */
     height: auto;
 }
 
 .bottom-cloud {
     position: absolute;
-    left: 300px;
+    left: 250px;
     bottom: 300px;
     width: 10%; /* Reduce the width of the image to 50% of its original size */
     height: auto;
@@ -55,12 +103,18 @@ a {
 
 .middle-container {
     background-color: #EAFDFC;
+    margin: auto auto 2rem auto;
 }
 
 .bottom-container {
-    background-color: #EAFDFC;
+    background-color: #06283D;
+    padding: 50px 0 20px 0;
 }
 
+#contact-message {
+    width: 40%;
+    margin: auto;
+}
 
 /***********************ID SELECTORS***************************/
 
@@ -85,7 +139,6 @@ a {
     width: 50%;
     margin: 80px auto 150px auto;
     text-align: left;
-    line-height: 2;
 }
 
 #coding-image {
@@ -98,7 +151,6 @@ a {
     width: 50%;
     margin: 100px auto 150px auto;
     text-align: left;
-    line-height: 2;
 }
 
 #computer-image {
@@ -108,9 +160,13 @@ a {
 }
 
 #presentation {
-    display: inline-block;
-    position: relative;
-    bottom: 1rem;
+    width: 30%;
+    margin: auto;
+}
+
+#contact-message {
+    width: 30%;
+    margin: 40px auto 60px;
 }
 
 #description-paragraph {
@@ -120,4 +176,10 @@ a {
 #programmer-image {
     width: auto; /* Reduce the width of the image to 50% of its original size */
     height: 10%
+}
+
+#footer-paragraph {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
 }
