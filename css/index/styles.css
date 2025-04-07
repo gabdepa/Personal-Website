@@ -86,7 +86,7 @@ a:hover {
     top: 0;
     width: 8%;
     height: 100vh;
-    background-color: #111;
+    background-color: #000000;
     z-index: 9999; /* Fica acima de outros elementos */
     padding: 1%;
     display: flex;
@@ -97,12 +97,12 @@ a:hover {
     display: block;
     text-decoration: none;
     margin-bottom: 15px;
-    font-size: 1rem;    
+    font-size: 1rem;
     transition: background-color 0.2s;
 }
 
 .sidebar-link i {
-    font-size: 1.5rem; /* Ajuste do tamanho do ícone (ex: 24px) */
+    font-size: 1.5rem;  /* Ajuste do tamanho do ícone (ex: 24px) */
 }
 
 .sidebar-link:hover {
