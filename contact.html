@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" lang="en">
     <title> Contact's</title>
-    <link rel="stylesheet" href="./css/history-contact-hobbies/styles2.css"> 
+    <link rel="stylesheet" href="./css/history-contact-hobbies/styles2.css">
     <link rel="icon" href="./css/index/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&family=Merriweather+Sans&family=Montserrat&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&family=Merriweather+Sans&family=Montserrat&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <div class="top-container">
-        <h1>Contact Details</h1>
-    </div>
 
-    <div class="middle-container">
-        <p> Curitiba, Brazil</p>
-        <p>+55(41)99958-8976</p>
-        <p>gabriel-r-p-p@hotmail.com</p>
-        <hr>
-        <form action="mailto:gabriel-r-p-p@hotmail.com" method="post" enctype="text/plain">
-            <label>Your Name:</label>
-            <input type="text" name="Name" value=""><br>
-            <label>Your E-mail:</label>
-            <input type="email" name="Email" value=""><br>
-            <label>Your Message:</label>
-            <textarea name="Message" rows="8" cols="80"></textarea><br>
-            <input class="btn" type="submit" name="submit" value="Submit">
-        </form>
-    </div>
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/gabriel-razzolini-pires-de-paula-9a76a8199/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
-        <a class="footer-link" href="https://github.com/gabdepa" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
-        <a class="footer-link" href="./history.html">History</a>
-        <a class="footer-link" href="./hobbies.html">Hobbies</a>
-        <a class="footer-link" href="./index.html">Home</a>
+<body>
+    <!-- Barra lateral fixa -->
+    <div class="sidebar">
+        <a class="sidebar-link" href="./index.html">Home</a>
+        <a class="sidebar-link" href="./history.html">History</a>
+        <a class="sidebar-link" href="./hobbies.html">Hobbies</a>
+        <a class="sidebar-link" href="https://www.linkedin.com/in/gabriel-razzolini-pires-de-paula-9a76a8199/"
+        target="_blank">
+        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+    </a>
+    <a class="sidebar-link" href="https://github.com/gabdepa" target="_blank">
+        <i class="fa fa-github" style="font-size:36px"></i>
+    </a>
         <p id="footer-paragraph">©2023 gabdepa. All rights reserved.</p>
     </div>
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+        <div class="top-container">
+            <h1>Contact Details</h1>
+        </div>
+
+        <div class="middle-container">
+            <p> Curitiba, Brazil</p>
+            <p>+55(41)99958-8976</p>
+            <p>gabriel-r-p-p@hotmail.com</p>
+            <hr>
+            <form action="mailto:gabriel-r-p-p@hotmail.com" method="post" enctype="text/plain">
+                <label>Your Name:</label>
+                <input type="text" name="Name" value=""><br>
+                <label>Your E-mail:</label>
+                <input type="email" name="Email" value=""><br>
+                <label>Your Message:</label>
+                <textarea name="Message" rows="8" cols="80"></textarea><br>
+                <input class="btn" type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

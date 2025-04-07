@@ -1,13 +1,15 @@
 /********************TAG SELECTORS**********************************/
 body {
     margin: 0;
+    background-color: #06283D;
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
 h1 {
     color: #5dbaf8;
-    font-size: 5.625rem; /*1em = 16px = 100% */
+    font-size: 5.625rem;
+    /*1em = 16px = 100% */
     line-height: 2;
     margin: 50px auto 0;
     font-family: 'M PLUS Code Latin', sans-serif;
@@ -65,9 +67,9 @@ a:hover {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background: #11999E;
     background-image: -webkit-linear-gradient(top, #11999E, #10999e);
     background-image: -moz-linear-gradient(top, #11999E, #10999e);
@@ -75,30 +77,51 @@ a:hover {
     background-image: -o-linear-gradient(top, #11999E, #10999e);
     background-image: linear-gradient(to bottom, #11999E, #10999e);
     text-decoration: none;
-  }
-
-/***********************CLASS SELECTORS***************************/
-.top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 40px;
-    width: 10%; /* Reduce the width of the image to 50% of its original size */
-    height: auto;
 }
 
-.bottom-cloud {
-    position: absolute;
-    left: 250px;
-    bottom: 300px;
-    width: 10%; /* Reduce the width of the image to 50% of its original size */
-    height: auto;
+/***********************CLASS SELECTORS***************************/
+.sidebar { /* Barra lateral fixa */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 8%;
+    height: 100vh;
+    background-color: #111;
+    z-index: 9999; /* Fica acima de outros elementos */
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-link { /* Links dentro da barra lateral */
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 1rem;    
+    transition: background-color 0.2s;
+}
+
+.sidebar-link i {
+    font-size: 1.5rem; /* Ajuste do tamanho do ícone (ex: 24px) */
+}
+
+.sidebar-link:hover {
+    color: #EAF6F6;
+}
+
+.main-content {
+    margin-left: 10%;
+    padding: 0;
 }
 
 .top-container {
-    background-color: #06283D;
-    position: relative;
-    padding-top: 80px;
-
+    background-color: #06283D; /* Mesma cor do fundo */
+    width: 100%;
+    margin: 0;
+    padding: 80px 0;
+    text-align: center;
+    position: relative; /* Para as nuvens absolutas ficarem limitadas a esse container */
+    overflow: hidden;
 }
 
 .middle-container {
@@ -106,9 +129,20 @@ a:hover {
     margin: auto auto 2rem auto;
 }
 
-.bottom-container {
-    background-color: #06283D;
-    padding: 50px 0 20px 0;
+.top-cloud {
+    position: absolute;
+    left: 10%;
+    top: 40px;
+    width: 10%;
+    height: auto;
+}
+
+.bottom-cloud {
+    position: absolute;
+    right: 10%;
+    bottom: 40px;
+    width: 10%;
+    height: auto;
 }
 
 #contact-message {
@@ -117,21 +151,24 @@ a:hover {
 }
 
 /***********************ID SELECTORS***************************/
-
 #avatar-image {
-    width: 10%; /* Reduce the width of the image to 50% of its original size */
-    height: auto; /* Keep the aspect ratio of the image intact */      
+    width: 10%;
+    /* Reduce the width of the image to 50% of its original size */
+    height: auto;
+    /* Keep the aspect ratio of the image intact */
 }
 
 #wave-image {
     display: inline-block;
-    width: 3%; /* Reduce the width of the image to 50% of its original size */
+    width: 3%;
+    /* Reduce the width of the image to 50% of its original size */
     height: auto;
 }
 
 #control-image {
     display: inline-block;
-    width: 3%; /* Reduce the width of the image to 50% of its original size */
+    width: 3%;
+    /* Reduce the width of the image to 50% of its original size */
     height: auto;
 }
 
@@ -142,8 +179,9 @@ a:hover {
 }
 
 #coding-image {
-    width: 25%; /* Reduce the width of the image to 50% of its original size */
-    float: right; 
+    width: 25%;
+    /* Reduce the width of the image to 50% of its original size */
+    float: right;
     margin-left: 30px;
 }
 
@@ -154,9 +192,10 @@ a:hover {
 }
 
 #computer-image {
-    width: 25%; /* Reduce the width of the image to 50% of its original size */
+    width: 25%;
+    /* Reduce the width of the image to 50% of its original size */
     float: left;
-    margin-right: 30px;      
+    margin-right: 30px;
 }
 
 #presentation {
@@ -174,12 +213,15 @@ a:hover {
 }
 
 #programmer-image {
-    width: auto; /* Reduce the width of the image to 50% of its original size */
+    width: auto;
+    /* Reduce the width of the image to 50% of its original size */
     height: 10%
 }
 
 #footer-paragraph {
-    color: #EAF6F6;
+    margin-top: auto;
+    padding: 20px 0; /* "Empurra" o texto para o final da barra */
     font-size: 0.75rem;
-    padding: 20px 0;
+    color: #EAF6F6;
+    text-align: center;
 }

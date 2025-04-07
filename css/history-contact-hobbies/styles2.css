@@ -2,9 +2,9 @@
 body {
     margin: 0;
     background-color: #EAFDFC;
+    text-align: center;
     font-family: verdana, sans-serif;
     font-size: larger;
-    text-align: center;
 }
 
 h1 {
@@ -51,12 +51,40 @@ a:hover {
     color: #033c3c;
 }
 
-/* img:hover {
-    background-color: gold;
-} */
-
 /******************CLASS SELECTORS***********************/
-/* Definiton: Multiple Instances, particular Class can be used more than once in a webpage */
+.sidebar { /* Barra lateral fixa */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 8%;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 9999; /* Fica acima de outros elementos */
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-link { /* Links dentro da barra lateral */
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.sidebar-link i {
+    font-size: 1.5rem;  /* Ajuste do tamanho do ícone (ex: 24px) */
+}
+
+.sidebar-link:hover {
+    color: #EAF6F6;
+}
+
+.main-content {
+    margin-left: 10%;
+    padding: 0;
+}
 
 .top-container {
     background-color: #06283D;
@@ -68,11 +96,6 @@ a:hover {
 .middle-container {
     background-color: #EAFDFC;
     margin: 2rem auto 5rem auto;
-}
-
-.bottom-container {
-    background-color: #06283D;
-    padding: 50px 0 20px 0;
 }
 
 .div-professional-academic {
@@ -119,10 +142,6 @@ a:hover {
     text-decoration: none;
 }
 
-.footer-link:hover {
-    color: #EAF6F6;
-}
-
 /******************ID SELECTORS***********************/
 /* Definiton: Single Instance, particular ID can only be used once in a webpage */
 #text-top {
@@ -131,7 +150,9 @@ a:hover {
 }
 
 #footer-paragraph {
-    color: #EAF6F6;
+    margin-top: auto;
+    padding: 20px 0; /* "Empurra" o texto para o final da barra */
     font-size: 0.75rem;
-    padding: 20px 0;
+    color: #EAF6F6;
+    text-align: center;
 }
